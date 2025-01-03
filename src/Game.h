@@ -2,7 +2,7 @@
 #ifndef PLATFORMER_GAME_H
 #define PLATFORMER_GAME_H
 
-#include <SFML/Graphics.hpp>
+#include "Player.h"
 
 class Game
 {
@@ -17,8 +17,8 @@ class Game
 
  private:
   sf::RenderWindow& window;
-  sf::Sprite ball;
-  sf::Texture ball_texture;
+  
+  Player player;
 
 };
 
