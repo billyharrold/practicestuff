@@ -19,6 +19,7 @@ class Game
   sf::RenderWindow& window;
   
   Player player;
+  sf::Texture player_texture;
 
 };
 

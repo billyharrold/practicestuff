@@ -16,7 +16,9 @@ Game::~Game()
 bool Game::init()
 {
 	// uhhhhh
-	
+	player_texture.loadFromFile("../Data/Images/kenney_animalpackredux/PNG/Round/bear.png");
+
+	player.getSprite().setTexture(player_texture);
   return true;
 }
 
@@ -27,7 +29,7 @@ void Game::update(float dt)
 
 void Game::render()
 {
-
+	window.draw(player.getSprite());
 }
 
 void Game::mouseClicked(sf::Event event)
