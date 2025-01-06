@@ -24,7 +24,8 @@ bool Game::init()
 
 void Game::update(float dt)
 {
-
+	player.mouseClicked(window);
+	player.updatePos(dt);
 }
 
 void Game::render()
