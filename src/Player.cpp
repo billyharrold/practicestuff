@@ -19,7 +19,7 @@ void Player::mouseClicked(sf::RenderWindow& window)
 	if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
 	{
 		clicked_position = window.mapPixelToCoords(sf::Mouse::getPosition(window));
-		std::cout << "clicked";
+		//std::cout << "clicked";
 	}
 }
 
