@@ -2,7 +2,7 @@
 #ifndef PLATFORMER_GAME_H
 #define PLATFORMER_GAME_H
 
-#include "Player.h"
+#include "Obstacles.h"
 
 class Game
 {
@@ -20,6 +20,9 @@ class Game
   
   Player player;
   sf::Texture player_texture;
+
+  Obstacles o1;
+  
 
 };
 

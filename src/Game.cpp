@@ -19,6 +19,12 @@ bool Game::init()
 	player_texture.loadFromFile("../Data/Images/kenney_animalpackredux/PNG/Round/bear.png");
 
 	player.getSprite().setTexture(player_texture);
+
+
+	o1.getSprite().setTexture(player_texture);
+	o1.getSprite().setPosition(300, 300);
+	
+	
   return true;
 }
 
@@ -31,6 +37,7 @@ void Game::update(float dt)
 void Game::render()
 {
 	window.draw(player.getSprite());
+	window.draw(o1.getSprite());
 }
 
 void Game::mouseClicked(sf::Event event)
